@@ -1,0 +1,27 @@
+#include <iostream>
+#include <algorithm>
+#include<vector>
+#include<math.h>
+#include <set>
+#define ll long long 
+#define loop(i,n) for(ll i=0;i<n;i++)
+
+using namespace std;
+
+int main() {
+     vector<int>v={2, 1, 5, 4, 6, 9, 7, 8, 10};
+     sort(v.begin(),v.end());
+     int t=v[v.size()-1];
+     int sum1=(t*(t+1))/2;
+     int sum=0;
+     for(int i=0;i<v.size();i++){
+      sum+=v[i];   
+     }
+     
+     
+     
+     cout<<sum1-sum<<endl;
+    
+
+    return 0;
+}
